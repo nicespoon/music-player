@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
 Name=Music Player
-Exec=/bin/bash -c 'cd ~/music-player && source venv/bin/activate && ./player.py'
+Exec=/bin/bash -c 'amixer sset Master 50% && cd ~/music-player && source venv/bin/activate && ./player.py'
 WorkingDirectory=/home/pi/music-player
 X-GNOME-Autostart-enabled=true
 Comment=Start music player with virtual environment
